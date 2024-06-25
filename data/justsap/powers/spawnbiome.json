@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_player_spawn",
+    "biome": "minecraft:forest",
+    "dimension": "minecraft:overworld",
+    "spawn_strategy": "default",
+    "name": "Childhood Biome",
+    "description": "You always seem to spawn in a forest."
+}

@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"justsap:poisonivy",
+		"justsap:exp",
+		"justsap:sunlight",
+		"justsap:leaves",
+		"justsap:nofood",
+		"justsap:waterfood",
+		"justsap:scorch",
+		"justsap:shieldless",
+		"justsap:spawnbiome",
+	"justsap:shadows",
+	"justsap:speedleaf",
+	"justsap:immune",
+	"justsap:particles"
+	],
+	"icon": "minecraft:flowering_azalea_leaves",
+	"order": 3,
+	"impact": 3,
+	"name": "Sapling",
+	"description":"Born from the soul condensing powers of a special tree."
+}

@@ -1,0 +1,25 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": 
+      {
+          "type": "origins:apply_effect",
+          "effect": {
+              "effect": "minecraft:saturation",
+              "duration": 80,
+              "show_particles": false,
+              "amplifier": 8,
+              "show_icon": false
+          }
+      },
+    "interval": 20,
+    "condition": {
+      "type":"origins:exposed_to_sun"
+    },
+  "name": "Autotroph",
+  "description": "You do photosynthesis, you can't eat food, and you get weakness when not in the sun",
+  "badges": [
+    { "type":"origins:sprite",
+        "sprite":"origins:textures/gui/badge/star.png"
+    }
+  ]
+  }

@@ -1,0 +1,9 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:spore_blossom_air",
+    "frequency": 8,
+    "spread": {
+        "x": 1.0, "y": 2.0, "z": 1.0
+    },
+    "hidden": true
+}

@@ -1,0 +1,12 @@
+{
+	"type": "origins:prevent_item_use",
+    "item_condition": {
+        "inverted": false,
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:shield"
+        }
+    },
+	"name": "No Shields",
+	"description": "Your branches are too weak to hold a shield properly."
+}

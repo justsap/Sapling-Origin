@@ -1,0 +1,46 @@
+{
+    "type": "origins:multiple",
+    "longer_fire": {
+        "type": "origins:disable_regen", 
+        "condition": {
+          "type": "origins:on_fire"
+      }
+  },
+  "more_fire_damage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:fire"
+    },
+    "modifier": {
+      "operation": "addition",
+      "value": 4
+    }
+  },
+  "hot_biomes":{
+    "type": "origins:burn",
+    "interval": 20,
+    "burn_duration": 10,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "justsap:hots"
+            }
+        },
+        {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fire_protection",
+            "calculation": "sum",
+            "comparison": ">=",
+            "compare_to": 16,
+            "inverted": true    
+        }
+    ]
+    }
+  },
+    "name": "Burnable",
+    "description": "You can't survive hot biomes and fire deals more damage"
+}
