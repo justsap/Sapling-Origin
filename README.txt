@@ -15,7 +15,7 @@ Information:
 
 	+ Autotroph & Water: You can't eat food, however you get saturation from being in the sun or by drinking water
 
-	+ Burnable: You can't handle hot biomes and fire deals more damage to you
+	+ Burnable: You can't handle hot biomes and fire deals more damage to you, however you can prevent it by wearing full fire protection 4 armor
 
 	+ Childhood Biome: Your first spawn is always a forest biome
 
