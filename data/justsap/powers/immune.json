@@ -1,5 +1,22 @@
 {
-    "type": "origins:effect_immunity",
-    "effect": "minecraft:poison",
+    "type":"origins:multiple",
+    "immunepoison": {
+        "type": "origins:effect_immunity",
+        "effect": "minecraft:poison"
+    },
+    "berries":{
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "minecraft:sweet_berry_bush"
+        }
+    },
+    "cactus":{
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "minecraft:cactus"
+        }
+    },
     "hidden": true
 }
