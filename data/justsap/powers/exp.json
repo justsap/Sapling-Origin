@@ -20,7 +20,7 @@
             },
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~0 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable_plants",
+                "command": "fill ~1 ~0 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable",
                 "permission_level": 4
             },
             {
