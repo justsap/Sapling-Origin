@@ -7,7 +7,7 @@ All Content is owned exclusively by the Creator. The Creator reserves the right 
 ## Permitted Use:
 You are granted a non-exclusive, non-transferable, revocable, limited license to download and edit the Content for your personal, non-commercial use. You may not claim the Content as your own or attribute it to anyone other than the Creator.
 
-##Media Usage and Attribution: 
+## Media Usage and Attribution: 
 If you use the Content in any media, including but not limited to videos, photos, or other similar media types, you must provide clear and visible credit to the Creator. Additionally, you must include a link to the original project in the description or accompanying text of the media.
 
 ## Restrictions on Redistribution: 
