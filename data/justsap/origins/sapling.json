@@ -4,16 +4,15 @@
 		"justsap:bush",
 		"justsap:nutrients",
 		"justsap:scorch",
-		"justsap:leaves",
+		"justsap:leafphasing",
 		"justsap:shieldless",
 		"justsap:spawnbiome",
-	"justsap:speedleaf",
 	"justsap:immune",
 	"justsap:particles"
 	],
-	"icon": "minecraft:flowering_azalea_leaves",
+	"icon": "minecraft:flowering_azalea",
 	"order": 3,
 	"impact": 3,
 	"name": "Sapling",
-	"description":"Born from the soul condensing powers of a special tree."
+	"description":"...born from the depths underneath a magical azalea tree, lies this plant-like creature."
 }
