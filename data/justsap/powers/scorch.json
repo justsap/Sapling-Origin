@@ -73,8 +73,8 @@
     }
   },
 
-    "name": "Burnable",
-    "description": "You can't survive hot biomes and fire deals more damage, but you can prevent it by wearing full fire protection 4 armor",
+    "name": "Flammable",
+    "description": "You can't survive hot biomes and fire deals more damage, but you can prevent it by wearing full fire protection 3 [or higher] armor.",
     "badges": [
       { "type":"origins:sprite",
           "sprite":"origins:textures/gui/community/silent/badge/shapes/shape_circle.png"
