@@ -1,5 +1,6 @@
 {
-    "type": "origins:multiple",
+  "type": "origins:multiple",
+  
     "longer_fire": {
         "type": "origins:disable_regen", 
         "condition": {
