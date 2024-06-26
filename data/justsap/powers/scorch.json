@@ -6,6 +6,7 @@
           "type": "origins:on_fire"
       }
   },
+
   "more_fire_damage": {
     "type": "origins:modify_damage_taken",
     "damage_condition": {
@@ -16,10 +17,11 @@
       "value": 4
     }
   },
+
   "hot_biomes":{
     "type": "origins:burn",
-    "interval": 20,
-    "burn_duration": 10,
+    "interval": 80,
+    "burn_duration": 20,
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -35,12 +37,42 @@
             "enchantment": "minecraft:fire_protection",
             "calculation": "sum",
             "comparison": ">=",
-            "compare_to": 16,
+            "compare_to": 12,
+            "inverted": true    
+        },
+        {
+            "type":"origins:daytime"
+        }
+    ]
+    }
+  },
+
+  "nether_biomes":{
+    "type": "origins:burn",
+    "interval": 80,
+    "burn_duration": 30,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "justsap:hots-nether"
+            }
+        },
+        {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:fire_protection",
+            "calculation": "sum",
+            "comparison": ">=",
+            "compare_to": 12,
             "inverted": true    
         }
     ]
     }
   },
+
     "name": "Burnable",
     "description": "You can't survive hot biomes and fire deals more damage, but you can prevent it by wearing full fire protection 4 armor",
     "badges": [

@@ -3,8 +3,6 @@
 	"values": [
         "minecraft:desert",
         "minecraft:badlands",
-        "minecraft:eroded_badlands",
-        "minecraft:basalt_deltas",
-        "minecraft:nether_wastes"
+        "minecraft:eroded_badlands"
 	]
 }
