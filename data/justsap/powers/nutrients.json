@@ -91,14 +91,16 @@
       "type": "origins:prevent_item_use",
       "item_condition": {
         "type": "origins:food"
-      }
+      },
+      "name":"Autotroph: \"No Food\"",
+      "hidden": true
     },
 
     "name": "Autotroph",
     "description": "Sunlight gives you saturation, drinking water gives fills hunger points, and rain gives you regeneration, but being in darkness makes you weak, and you can't eat normal foods.",
     "badges": [
       { "type":"origins:sprite",
-          "sprite":"origins:textures/gui/badge/star.png"
+          "sprite":"origins:textures/gui/community/silent/badge/icons/sun_icon.png"
       }
     ]
   }
