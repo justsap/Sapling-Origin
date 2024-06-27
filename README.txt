@@ -13,9 +13,9 @@ Information:
 
 	+ Phasing Leaves: You can move faster when phasing through leaves
 
-	+ Autotroph & Water: You can't eat food, however you get saturation from being in the sun or by drinking water
+	+ Autotroph & Water: Sunlight gives you saturation, drinking water gives fills hunger points, and rain gives you regeneration, but being in darkness makes you weak, and you can't eat normal foods.
 
-	+ Burnable: You can't handle hot biomes and fire deals more damage to you, however you can prevent it by wearing full fire protection 4 armor
+	+ Burnable: You can't handle hot biomes and fire deals more damage to you, however you can prevent it by wearing full armor set of fire protection 3 or more.
 
 	+ Childhood Biome: Your first spawn is always a forest biome
 
@@ -25,7 +25,7 @@ Information:
 
 Official Links (as of June 2024)
 Modrinth: https://modrinth.com/datapack/origin-sapling
-Github: https://github.com/justsap/Sapling-Origin/tree/main
+Github: https://github.com/justsap/Sapling-Origin/
 
 Socials:
 https://www.youtube.com/@JustSaps
