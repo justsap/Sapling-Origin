@@ -1,0 +1,106 @@
+{
+  "type": "origins:multiple", 
+
+    "sunlight":{
+        "type": "origins:action_over_time",
+        "entity_action": 
+          {
+              "type": "origins:apply_effect",
+              "effect": {
+                  "effect": "minecraft:saturation",
+                  "duration": 80,
+                  "show_particles": false,
+                  "amplifier": 8,
+                  "show_icon": false
+              }
+          },
+        "interval": 20,
+        "condition": {
+          "type":"origins:exposed_to_sun"
+        }
+    },
+
+    "raining":{
+      "type": "origins:action_over_time",
+      "entity_action": 
+        {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 80,
+                "show_particles": false,
+                "amplifier": 1,
+                "show_icon": false
+            }
+        },
+      "interval": 20,
+      "condition": {
+        "type":"origins:in_rain"
+      }
+    },
+
+    "water-saturation":{
+      "type": "origins:action_on_item_use",
+      "entity_action": {
+          "type": "origins:feed",
+          "food": 4,
+          "saturation": 5.0
+      },
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:potion"
+          }
+      }
+    },
+
+    "shadows":{
+      "type": "origins:action_over_time",
+      "entity_action": 
+        {
+            "type": "origins:apply_effect",
+            "effects": [
+              {
+                  "effect": "minecraft:weakness",
+                  "duration": 80,
+                  "amplifier": 1,
+                  "show_particles": false,
+                  "show_icon": true
+              },
+              {
+                  "effect": "minecraft:hunger",
+                  "duration": 80,
+                  "amplifier": 0,
+                  "show_particles": false,
+                  "show_icon": true
+              }
+          ]
+        },
+            "condition": {
+              "type": "origins:in_block",
+              "block_condition": {
+              "type": "origins:light_level",
+              "light_type": "sky",
+              "comparison": "<",
+              "compare_to": 8 }
+            },
+            "interval": 20
+    },
+
+    "nofood": {
+      "type": "origins:prevent_item_use",
+      "item_condition": {
+        "type": "origins:food"
+      },
+      "name":"Autotroph: \"No Food\"",
+      "hidden": true
+    },
+
+    "name": "Autotroph",
+    "description": "Sunlight gives you saturation, drinking water gives fills hunger points, and rain gives you regeneration, but being in darkness makes you weak, and you can't eat normal foods.",
+    "badges": [
+      { "type":"origins:sprite",
+          "sprite":"origins:textures/gui/community/silent/badge/icons/sun_icon.png"
+      }
+    ]
+  }

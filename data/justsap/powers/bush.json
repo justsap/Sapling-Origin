@@ -4,6 +4,7 @@
         "comparison": ">=",
         "compare_to": 2
 	},
+
     "type": "origins:active_self",
     "entity_action": {
         "type":"origins:and",
@@ -20,7 +21,7 @@
             },
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~0 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable_plants",
+                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable",
                 "permission_level": 4
             },
             {
@@ -96,4 +97,4 @@
   },
     "name": "Grounded Roots",
     "description": "You sink your tree roots into the ground and create a bush-like shield, but it takes away 5 xp levels."
-    }
+}
