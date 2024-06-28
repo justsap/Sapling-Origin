@@ -1,0 +1,144 @@
+{
+    "type": "origins:multiple",
+    "healer": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 3.5,
+            "shape": "cube",
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:regeneration",
+                                "duration": 80,
+                                "amplifier": 2
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:regeneration",
+                                "duration": 80,
+                                "amplifier": 2
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "interval": 5,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "apugli:entity_in_radius",
+                    "condition": {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    "radius": 2.5,
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "justsap:healthcircle_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "timer": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "comment": "//You can change the 'cooldown' value to whatever you want the TIMER to last for (remember, the cooldown is measured in ticks)",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 9,
+            "inverted": true,
+            "comment": "//You can edit this 'hud_render' as you please."
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 400,
+        "comment": "//You can change the 'cooldown' value to whatever you want the COOLDOWN to last for (remember, the cooldown is measured in ticks)",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 9,
+            "comment": "//You can edit this 'hud_render' as you please."
+        }
+    },
+    "trigger": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "justsap:healthcircle_timer"
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 201,
+                    "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
+                    "action": {
+                        "type": "origins:trigger_cooldown",
+                        "power": "justsap:healthcircle_cooldown"
+                    }
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -4
+                }
+            ]
+        },
+        "cooldown": 200,
+        "comment": "//Make the 'cooldown' value the same as the timer's 'cooldown' value",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "apugli:entity_in_radius",
+                    "condition": {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    "radius": 2.5,
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "justsap:healthcircle_cooldown",
+                    "compare_to": 0,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 4
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "name": "Mycorrihizal Network",
+    "description": "Connecting your roots to the ground, you generate a field that heals anyone in it. However, at least one player must be near you for it to work"
+}
