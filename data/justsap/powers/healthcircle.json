@@ -139,6 +139,13 @@
             "should_render": false
         }
     },
-    "name": "Mycorrihizal Network",
-    "description": "Connecting your roots to the ground, you generate a field that heals anyone in it. However, at least one player must be near you for it to work"
+    "name": "Share Nutrients",
+    "description": "If in a 4 block radius with another player, you can create a health regeneration field that heals anyone in it.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_square.png",
+            "text": "Multiplayer ability, use with %s"
+        }
+    ]
 }

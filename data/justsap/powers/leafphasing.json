@@ -59,8 +59,10 @@
 "name": "Leaf Phasing",
 "description": "You can phase through leaves, and it makes you faster.",
 "badges": [
-    { "type":"origins:sprite",
-        "sprite":"origins:textures/gui/community/silent/badge/colors/green.png"
+    {
+        "type": "origins:tooltip",
+        "sprite": "origins:textures/gui/community/silent/badge/colors/green.png",
+        "text": "Effect Given: - Speed II"
     }
-  ]
+]
 }
