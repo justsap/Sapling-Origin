@@ -33,7 +33,7 @@
                 "show_icon": false
                 }
             },
-        "interval": 10,
+        "interval": 5,
         "condition": {
             "type": "origins:in_block",
             "block_condition": {
