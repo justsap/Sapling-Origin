@@ -117,12 +117,16 @@
                     "levels": -4
                 },
                 {
-                    "type":"origins:execute_command",
-                    "command": "execute at @p run playsound minecraft:block.mangrove_roots.place player @s ~ ~ ~ 10 1"
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.mangrove_roots.place",
+                    "category": "players",
+                    "volume": 2.0
                 },
                 {
-                    "type":"origins:execute_command",
-                    "command": "execute at @p run playsound minecraft:block.beacon.power_select player @s ~ ~ ~ 8 1"
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.beacon.power_select",
+                    "category": "players",
+                    "volume": 1.5
                 }
             ]
         },

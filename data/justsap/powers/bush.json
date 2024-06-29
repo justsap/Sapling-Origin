@@ -25,14 +25,16 @@
                 
             },
             {
-                "type":"origins:execute_command",
-                "command": "execute at @p run playsound minecraft:entity.allay.item_taken player @s ~ ~ ~ 2 1"
-                
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.allay.item_taken",
+                "category": "players",
+                "volume": 1.5
             },
             {
-                "type":"origins:execute_command",
-                "command": "execute at @p run playsound minecraft:block.azalea_leaves.fall player @s ~ ~ ~ 10 1"
-                
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.azalea_leaves.fall",
+                "category": "players",
+                "volume": 2
             },
             {
                 "type": "origins:add_xp",
