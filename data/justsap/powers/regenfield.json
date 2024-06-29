@@ -1,5 +1,19 @@
 {
     "type": "origins:multiple",
+    "particles": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function img:regenfield"
+        },
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "justsap:regenfield_timer",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
     "healer": {
         "type": "origins:action_over_time",
         "entity_action": {
@@ -34,7 +48,7 @@
                 ]
             }
         },
-        "interval": 5,
+        "interval": 10,
         "condition": {
             "type": "origins:and",
             "conditions": [
