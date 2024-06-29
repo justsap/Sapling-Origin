@@ -115,6 +115,14 @@
                 {
                     "type": "origins:add_xp",
                     "levels": -4
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "execute at @p run playsound minecraft:block.mangrove_roots.place player @s ~ ~ ~ 10 1"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "execute at @p run playsound minecraft:block.beacon.power_select player @s ~ ~ ~ 8 1"
                 }
             ]
         },
