@@ -37,10 +37,23 @@
         "condition": {
             "type": "origins:in_block",
             "block_condition": {
-                "type": "origins:in_tag",
-                "tag": "minecraft:leaves"
-                }
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:leaves"
+                    },
+                    {
+                        "type": "origins:offset",
+                        "condition": {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:leaves"
+                        },
+                        "y": 1
+                    }
+                ]
             }
+        }
     },
 
 "name": "Leaf Phasing",
