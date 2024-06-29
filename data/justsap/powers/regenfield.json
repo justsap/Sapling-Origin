@@ -50,7 +50,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:healthcircle_timer",
+                    "resource": "justsap:regenfield_timer",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -87,7 +87,7 @@
             "actions": [
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "justsap:healthcircle_timer"
+                    "power": "justsap:regenfield_timer"
                 },
                 {
                     "type": "origins:delay",
@@ -95,7 +95,7 @@
                     "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
                     "action": {
                         "type": "origins:trigger_cooldown",
-                        "power": "justsap:healthcircle_cooldown"
+                        "power": "justsap:regenfield_cooldown"
                     }
                 },
                 {
@@ -121,7 +121,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:healthcircle_cooldown",
+                    "resource": "justsap:regenfield_cooldown",
                     "compare_to": 0,
                     "comparison": "=="
                 },
