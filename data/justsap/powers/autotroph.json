@@ -5,16 +5,11 @@
         "type": "origins:action_over_time",
         "entity_action": 
           {
-              "type": "origins:apply_effect",
-              "effect": {
-                  "effect": "minecraft:saturation",
-                  "duration": 80,
-                  "show_particles": false,
-                  "amplifier": 8,
-                  "show_icon": false
-              }
+            "type": "origins:feed",
+            "food": 16,
+            "saturation": 10.0
           },
-        "interval": 20,
+        "interval": 10,
         "condition": {
           "type":"origins:exposed_to_sun"
         }
@@ -44,7 +39,7 @@
       "entity_action": {
           "type": "origins:feed",
           "food": 4,
-          "saturation": 5.0
+          "saturation": 3.0
       },
       "item_condition": {
           "type": "origins:ingredient",
