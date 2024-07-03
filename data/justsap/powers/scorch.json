@@ -34,6 +34,14 @@
             }
         },
         {
+          "type": "origins:in_block",
+          "block_condition": {
+          "type": "origins:light_level",
+          "light_type": "sky",
+          "comparison": ">=",
+          "compare_to": 10 }
+        },
+        {
             "type": "origins:enchantment",
             "enchantment": "minecraft:fire_protection",
             "calculation": "sum",

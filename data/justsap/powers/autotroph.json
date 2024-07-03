@@ -6,14 +6,28 @@
         "entity_action": 
           {
             "type": "origins:feed",
-            "food": 16,
-            "saturation": 10.0
+            "food": 20,
+            "saturation": 0.4
           },
         "interval": 10,
         "condition": {
-          "type":"origins:exposed_to_sun"
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:in_block",
+              "block_condition": {
+                "type": "origins:light_level",
+                "light_type": "sky",
+                "comparison": ">=",
+                "compare_to": 10
+              }
+            },
+            {
+              "type": "origins:daytime"
+            }
+          ]
         }
-    },
+      },
 
     "raining":{
       "type": "origins:action_over_time",
@@ -39,7 +53,7 @@
       "entity_action": {
           "type": "origins:feed",
           "food": 4,
-          "saturation": 3.0
+          "saturation": 2
       },
       "item_condition": {
           "type": "origins:ingredient",
