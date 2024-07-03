@@ -11,28 +11,30 @@
         "actions": [
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace air",
-                "permission_level": 4
+                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace air"
+                
             },
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:flowers",
-                "permission_level": 4
+                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:flowers"
+                
             },
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable",
-                "permission_level": 4
+                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable"
+                
             },
             {
-                "type":"origins:execute_command",
-                "command": "execute at @p run playsound minecraft:entity.allay.item_taken player @s ~ ~ ~ 2 1",
-                "permission_level": 4
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.allay.item_taken",
+                "category": "players",
+                "volume": 1.5
             },
             {
-                "type":"origins:execute_command",
-                "command": "execute at @p run playsound minecraft:block.azalea_leaves.fall player @s ~ ~ ~ 10 1",
-                "permission_level": 4
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.azalea_leaves.fall",
+                "category": "players",
+                "volume": 2
             },
             {
                 "type": "origins:add_xp",

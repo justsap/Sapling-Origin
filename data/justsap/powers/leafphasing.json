@@ -33,21 +33,36 @@
                 "show_icon": false
                 }
             },
-        "interval": 10,
+        "interval": 5,
         "condition": {
             "type": "origins:in_block",
             "block_condition": {
-                "type": "origins:in_tag",
-                "tag": "minecraft:leaves"
-                }
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:leaves"
+                    },
+                    {
+                        "type": "origins:offset",
+                        "condition": {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:leaves"
+                        },
+                        "y": 1
+                    }
+                ]
             }
+        }
     },
 
 "name": "Leaf Phasing",
 "description": "You can phase through leaves, and it makes you faster.",
 "badges": [
-    { "type":"origins:sprite",
-        "sprite":"origins:textures/gui/community/silent/badge/colors/green.png"
+    {
+        "type": "origins:tooltip",
+        "sprite": "origins:textures/gui/community/silent/badge/colors/green.png",
+        "text": "Effect Given: - Speed II"
     }
-  ]
+]
 }

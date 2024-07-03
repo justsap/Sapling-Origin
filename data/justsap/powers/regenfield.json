@@ -1,0 +1,177 @@
+{
+    "type": "origins:multiple",
+    "particles": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function img:regenfield"
+        },
+        "interval": 5,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "justsap:regenfield_timer",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "healer": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 3.5,
+            "shape": "cube",
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:regeneration",
+                                "duration": 100,
+                                "amplifier": 2
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:regeneration",
+                                "duration": 100,
+                                "amplifier": 2
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "apugli:entity_in_radius",
+                    "condition": {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    "radius": 2.5,
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "justsap:regenfield_timer",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "timer": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "comment": "//You can change the 'cooldown' value to whatever you want the TIMER to last for (remember, the cooldown is measured in ticks)",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 9,
+            "inverted": true,
+            "comment": "//You can edit this 'hud_render' as you please."
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 400,
+        "comment": "//You can change the 'cooldown' value to whatever you want the COOLDOWN to last for (remember, the cooldown is measured in ticks)",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 9,
+            "comment": "//You can edit this 'hud_render' as you please."
+        }
+    },
+    "trigger": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "justsap:regenfield_timer"
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 201,
+                    "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
+                    "action": {
+                        "type": "origins:trigger_cooldown",
+                        "power": "justsap:regenfield_cooldown"
+                    }
+                },
+                {
+                    "type": "origins:add_xp",
+                    "levels": -4
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.mangrove_roots.place",
+                    "category": "players",
+                    "volume": 2.0
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.beacon.power_select",
+                    "category": "players",
+                    "volume": 1.5
+                }
+            ]
+        },
+        "cooldown": 200,
+        "comment": "//Make the 'cooldown' value the same as the timer's 'cooldown' value",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "apugli:entity_in_radius",
+                    "condition": {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    "radius": 2.5,
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "justsap:regenfield_cooldown",
+                    "compare_to": 0,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:xp_levels",
+                    "comparison": ">=",
+                    "compare_to": 4
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "name": "Share Nutrients",
+    "description": "If in a 4 block radius with another player, you can create a health regeneration field that heals anyone in it.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_square.png",
+            "text": "Multiplayer ability, use with %s"
+        }
+    ]
+}
