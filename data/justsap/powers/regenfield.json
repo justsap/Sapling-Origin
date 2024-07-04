@@ -197,7 +197,7 @@
         }
     },
     "name": "Share Nutrients",
-    "description": "If in a 4 block radius with another player, you can create a field that heals anyone in it, but it takes away 2 EXP levels.",
+    "description": "If in a 4 block radius with another player, you can create a field that heals anyone in it, but it takes away 1 exp level.",
     "badges": [
         {
             "type": "origins:keybind",
