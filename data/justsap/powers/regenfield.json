@@ -145,7 +145,7 @@
                 },
                 {
                     "type": "origins:add_xp",
-                    "levels": -2
+                    "levels": -1
                 },
                 {
                     "type": "origins:play_sound",
@@ -185,7 +185,7 @@
                 {
                     "type": "origins:xp_levels",
                     "comparison": ">=",
-                    "compare_to": 2
+                    "compare_to": 1
                 }
             ]
         },
