@@ -17,7 +17,9 @@ Information:
 
 	+ Burnable: You can't handle hot biomes and fire deals more damage to you, however you can prevent it by wearing full armor set of fire protection 3 or more.
 
-	+ Childhood Biome: Your first spawn is always a forest biome
+	+ Childhood Biome: Your first spawn is always a forest biome.
+
+	+ Remains: Upon death, you leave an azalea bush and you also have custom hurt & death sounds.
 
 	+ No Shields
 
