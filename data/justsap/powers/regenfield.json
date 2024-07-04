@@ -116,6 +116,15 @@
             "comment": "//You can edit this 'hud_render' as you please."
         }
     },
+    "reset":{
+        "type": "origins:action_on_callback",
+        "entity_action_gained":{
+            "type": "origins:change_resource",
+            "resource": "justsap:regenfield_timer",
+            "change": 200,
+            "operation": "set"
+        }
+    },
     "trigger": {
         "type": "origins:active_self",
         "entity_action": {
@@ -136,7 +145,7 @@
                 },
                 {
                     "type": "origins:add_xp",
-                    "levels": -4
+                    "levels": -2
                 },
                 {
                     "type": "origins:play_sound",
@@ -176,7 +185,7 @@
                 {
                     "type": "origins:xp_levels",
                     "comparison": ">=",
-                    "compare_to": 4
+                    "compare_to": 2
                 }
             ]
         },
@@ -188,7 +197,7 @@
         }
     },
     "name": "Share Nutrients",
-    "description": "If in a 4 block radius with another player, you can create a health regeneration field that heals anyone in it.",
+    "description": "If in a 4 block radius with another player, you can create a field that heals anyone in it, but it takes away 2 EXP levels.",
     "badges": [
         {
             "type": "origins:keybind",
