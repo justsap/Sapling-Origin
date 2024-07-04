@@ -1,1 +1,10 @@
-{"pack": {"name":"Sapling","id":"SapOrigin","pack_format":18,"authors":"JustSap","version":"1.0.0","description":"a weird plant themed origin by JustSap"}}
+{
+    "pack": {
+        "name": "Sapling Origin",
+        "id": "SaplingOrigin",
+        "pack_format": 18,
+        "authors": "JustSap",
+        "version": "1.0.0",
+        "description": "a weird plant themed origin by JustSap"
+    }
+}
