@@ -2,7 +2,7 @@
     "condition": {
         "type": "origins:xp_levels",
         "comparison": ">=",
-        "compare_to": 2
+        "compare_to": 4
 	},
 
     "type": "origins:active_self",
@@ -38,7 +38,7 @@
             },
             {
                 "type": "origins:add_xp",
-                "levels": -2
+                "levels": -4
             },
             {
                 "type": "origins:apply_effect",
