@@ -3,10 +3,11 @@
 		"justsap:poisonivy",
 		"justsap:bush",
 		"justsap:regenfield",
-		"justsap:nutrients",
+		"justsap:autotroph",
 		"justsap:scorch",
 		"justsap:leafphasing",
 		"justsap:shieldless",
+		"justsap:remains",
 		"justsap:spawnbiome",
 	"justsap:immune",
 	"justsap:particles"

@@ -44,24 +44,24 @@
                 "type": "origins:apply_effect",
                 "effects": [
                     {
-                    "effect": "minecraft:resistance",
-                    "duration": 200,
-                    "show_particles": false,
-                    "amplifier": 4,
-                    "show_icon": true
+                        "effect": "minecraft:resistance",
+                        "duration": 200,
+                        "show_particles": false,
+                        "amplifier": 5,
+                        "show_icon": true
                     },
                     {
                         "effect": "minecraft:slowness",
-                        "duration": 240,
+                        "duration": 160,
                         "show_particles": false,
-                        "amplifier": 24,
+                        "amplifier": 9,
                         "show_icon": false
                     },
                     {
                         "effect": "minecraft:regeneration",
                         "duration": 240,
                         "show_particles": false,
-                        "amplifier": 7,
+                        "amplifier": 4,
                         "show_icon": false
                     },
                     {
@@ -73,22 +73,22 @@
                     },
                     {
                         "effect": "minecraft:nausea",
-                        "duration": 340,
+                        "duration": 300,
                         "show_particles": false,
-                        "amplifier": 3,
+                        "amplifier": 0,
                         "show_icon": false
                     },
                     {
-                        "effect": "minecraft:mining_fatigue",
+                        "effect": "minecraft:weakness",
                         "duration": 240,
                         "show_particles": false,
-                        "amplifier": 3,
+                        "amplifier": 1,
                         "show_icon": false
                     }
                 ]
             }
         ]
-     },
+    },
 "key": {
     "key": "key.origins.secondary_active"
 },

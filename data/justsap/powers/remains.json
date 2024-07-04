@@ -1,0 +1,30 @@
+{
+    "type": "origins:multiple",
+    "remains": {
+        "type": "origins:action_on_death",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:block_action_at",
+                "block_action": {
+                    "type": "origins:set_block",
+                    "block": "minecraft:flowering_azalea"
+                }
+            }
+        }
+    },
+    "hurtfx": {
+        "type": "apugli:custom_hurt_sound",
+        "sound": "minecraft:block.cherry_leaves.break",
+        "volume": 2,
+        "pitch": 1.5
+    },
+    "deathfx": {
+        "type": "apugli:custom_death_sound",
+        "sound": "minecraft:block.grass.break",
+        "volume": 2.5,
+        "pitch": 1.5
+    },
+    "name":"Remains",
+    "description": "Upon death, you leave an azalea bush behind."
+}

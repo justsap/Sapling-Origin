@@ -27,22 +27,44 @@
                         "type": "origins:target_action",
                         "action": {
                             "type": "origins:apply_effect",
-                            "effect": {
-                                "effect": "minecraft:regeneration",
-                                "duration": 100,
-                                "amplifier": 2
-                            }
+                            "effects": [
+                                {
+                                    "effect": "minecraft:regeneration",
+                                    "duration": 160,
+                                    "amplifier": 2
+                                },
+                                {
+                                    "effect": "minecraft:saturation",
+                                    "duration": 160,
+                                    "amplifier": 0,
+                                    "show_icon": false
+                                },
+                                {
+                                    "effect": "minecraft:resistance",
+                                    "duration": 80,
+                                    "amplifier": 1,
+                                    "show_icon": false
+                                }
+                            ]
                         }
                     },
                     {
                         "type": "origins:actor_action",
                         "action": {
                             "type": "origins:apply_effect",
-                            "effect": {
-                                "effect": "minecraft:regeneration",
-                                "duration": 100,
-                                "amplifier": 2
-                            }
+                            "effects": [
+                                {
+                                    "effect": "minecraft:regeneration",
+                                    "duration": 160,
+                                    "amplifier": 1
+                                },
+                                {
+                                    "effect": "minecraft:resistance",
+                                    "duration": 80,
+                                    "amplifier": 0,
+                                    "show_icon": false
+                                }
+                            ]
                         }
                     }
                 ]
