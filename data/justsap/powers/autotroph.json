@@ -111,7 +111,7 @@
       {
         "type": "origins:tooltip",
         "sprite": "origins:textures/gui/community/silent/badge/icons/sun_icon.png",
-        "text": "Effects Given:\n - Sunlight: Saturation\n - Potions/Water Bottles: 2 Hunger Points\n - Being in Rain: Regeneration\n - Being in the Dark: Weakness & Hunger"
+        "text": "Effects Given:\n - Sunlight: Fills Hunger & Saturation\n - Potions/Water Bottles: 2 Hunger Points\n - Being in Rain: Regeneration\n - Being in the Dark: Weakness & Hunger"
       }
     ]
   }
