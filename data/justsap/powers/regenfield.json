@@ -34,6 +34,12 @@
                                     "amplifier": 2
                                 },
                                 {
+                                    "effect": "minecraft:saturation",
+                                    "duration": 160,
+                                    "amplifier": 0,
+                                    "show_icon": false
+                                },
+                                {
                                     "effect": "minecraft:resistance",
                                     "duration": 80,
                                     "amplifier": 1,
