@@ -4,7 +4,7 @@ CONTENT AGREEMENT: https://github.com/justsap/Sapling-Origin/blob/main/LICENSE.m
 
 -----------------------------------
 Information:
-		This datapack adds my personal origin, "Sapling"! This of course requires the Origins Mod. 
+		This datapack adds my personal origin, "Sapling"! This requires Origins Mod, APUGLI (or toomanyorigins mod if u want more origins), and Origins Extra Keybinds
 	This origin has the following abilities:
 
 	+ Poison Ivy [Toggled]: Whenever you punch a player or entity with this toggled, it poisons the target. This also makes it so any entity or player that hits you also gets poisoned (even if its not toggled)
@@ -25,8 +25,8 @@ Information:
 
 -----------------------------------
 
-Official Links (as of June 2024)
-Modrinth: https://modrinth.com/datapack/origin-sapling
+Official Links (as of July 2024)
+Modrinth: https://modrinth.com/datapack/origin-sapling (please use this, it has more details and gives links to dependencies)
 Github: https://github.com/justsap/Sapling-Origin/
 
 Socials:
