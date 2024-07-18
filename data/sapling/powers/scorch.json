@@ -88,12 +88,12 @@
   },
 
     "name": "Flammable",
-    "description": "You can't survive hot biomes and fire deals more damage, but you can prevent it by wearing full fire protection 3 [or higher] armor.",
+    "description": "You burn in hot biomes and fire hurts more, but you can prevent it by wearing a full armor set of at least §nFire Protection II.",
     "badges": [
       {
         "type": "origins:tooltip",
         "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_circle.png",
-        "text": "Hot Biomes:\n - All nether biomes\n - Deserts\n - Badlands\n - Eroded Badlands\n\n[any biome that's hot and has no trees]"
+        "text": "Hot Biomes [during daytime]:\n - Deserts\n - Badlands\n - Eroded Badlands\n - All nether biomes [any time]\n\n[any biome that's hot and has no trees]"
       }
     ]
   }

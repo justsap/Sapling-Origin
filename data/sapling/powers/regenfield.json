@@ -194,7 +194,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_square.png",
-            "text": "Active ability, use with %s\n §o- Must have entity in 4 block radius"
+            "text": "Active ability, use with %s §o- Must have entity in a 4 block radius"
         }
     ]
 }
