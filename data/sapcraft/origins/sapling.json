@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"sapling:poisonivy",
+		"sapling:bush",
+		"sapling:regenfield",
+		"sapling:autotroph",
+		"sapling:scorch",
+		"sapling:leafphasing",
+		"sapling:shieldless",
+		"sapling:remains",
+		"sapling:spawnbiome",
+	"sapling:immune",
+	"sapling:particles"
+	],
+	"icon": "minecraft:oak_sapling",
+	"order": 3,
+	"impact": 3,
+	"name": "Sapling",
+	"description":"...born from the roots of a magical tree, lies this plant-like creature."
+}

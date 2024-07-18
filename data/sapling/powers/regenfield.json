@@ -9,7 +9,7 @@
         "interval": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "justsap:regenfield_timer",
+            "resource": "sapling:regenfield_timer",
             "comparison": ">",
             "compare_to": 0
         }
@@ -52,19 +52,11 @@
                         "type": "origins:actor_action",
                         "action": {
                             "type": "origins:apply_effect",
-                            "effects": [
-                                {
-                                    "effect": "minecraft:regeneration",
-                                    "duration": 160,
-                                    "amplifier": 1
-                                },
-                                {
-                                    "effect": "minecraft:resistance",
-                                    "duration": 80,
-                                    "amplifier": 0,
-                                    "show_icon": false
-                                }
-                            ]
+                            "effect": {
+                                "effect": "minecraft:resistance",
+                                "duration": 160,
+                                "amplifier": 1
+                            }
                         }
                     }
                 ]
@@ -77,8 +69,8 @@
                 {
                     "type": "apugli:entity_in_radius",
                     "condition": {
-                        "type": "apoli:entity_type",
-                        "entity_type": "minecraft:player"
+                        "type": "origins:in_tag",
+                        "tag": "sapcraft:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -86,7 +78,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:regenfield_timer",
+                    "resource": "sapling:regenfield_timer",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -120,7 +112,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained":{
             "type": "origins:change_resource",
-            "resource": "justsap:regenfield_timer",
+            "resource": "sapling:regenfield_timer",
             "change": 200,
             "operation": "set"
         }
@@ -132,7 +124,7 @@
             "actions": [
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "justsap:regenfield_timer"
+                    "power": "sapling:regenfield_timer"
                 },
                 {
                     "type": "origins:delay",
@@ -140,7 +132,7 @@
                     "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
                     "action": {
                         "type": "origins:trigger_cooldown",
-                        "power": "justsap:regenfield_cooldown"
+                        "power": "sapling:regenfield_cooldown"
                     }
                 },
                 {
@@ -169,8 +161,8 @@
                 {
                     "type": "apugli:entity_in_radius",
                     "condition": {
-                        "type": "apoli:entity_type",
-                        "entity_type": "minecraft:player"
+                        "type": "origins:in_tag",
+                        "tag": "sapcraft:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -178,7 +170,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:regenfield_cooldown",
+                    "resource": "sapling:regenfield_cooldown",
                     "compare_to": 0,
                     "comparison": "=="
                 },
@@ -197,12 +189,12 @@
         }
     },
     "name": "Share Nutrients",
-    "description": "If in a 4 block radius with another player, you can create a field that heals anyone in it, but it takes away 1 exp level.",
+    "description": "If in proximity with a player or any land animal, you can create a circle that heals those inside it, but it takes away §n1 XP level.",
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_square.png",
-            "text": "Multiplayer ability, use with %s"
+            "text": "Active ability, use with %s §o- Must have entity in a 4 block radius"
         }
     ]
 }

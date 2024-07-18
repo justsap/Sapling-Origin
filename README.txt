@@ -1,4 +1,4 @@
-Datapack Created by JustSap!
+Datapack Created by JustSap! (file directory alias: "sapcraft")
 
 CONTENT AGREEMENT: https://github.com/justsap/Sapling-Origin/blob/main/LICENSE.md
 
@@ -11,11 +11,13 @@ Information:
 
 	+ Grounded Roots [Activate]: You can protect yourself by summoning a bush-like structure and give yourself a bunch of defensive potion effects. This may seem overpowered, however it takes away 5 experience levels.
 
-	+ Phasing Leaves: You can move faster when phasing through leaves
+	+ Share Nutrients [Activate]: If in 4 block radius with a player or any land animal, you can create a circle that heals those inside it, but it takes away 1 XP level.
+
+	+ Phasing Leaves: You can phase through leaves AND you move faster while doing it.
 
 	+ Autotroph & Water: Sunlight gives you saturation, drinking water gives fills hunger points, and rain gives you regeneration, but being in darkness makes you weak, and you can't eat normal foods.
 
-	+ Burnable: You can't handle hot biomes and fire deals more damage to you, however you can prevent it by wearing full armor set of fire protection 3 or more.
+	+ Flammable: You burn in hot biomes and fire hurts more, but you can prevent it by wearing a full armor set of at least Fire Protection II..
 
 	+ Childhood Biome: Your first spawn is always a forest biome.
 
