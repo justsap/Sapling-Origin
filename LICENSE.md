@@ -22,3 +22,5 @@ You may have "fair use" rights for the software under the law. These terms do no
 ## Content Removal: 
 The Creator reserves the right to request the removal of any Content from any platform, medium, or server at any time and for any reason. Upon receipt of such a request, you must promptly remove the specified Content and cease its use. Failure to comply with such a request constitutes a violation of these Terms.
 
+## Changes
+This license is subject to change by the creator at any time.
