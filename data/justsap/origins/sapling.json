@@ -12,9 +12,9 @@
 	"justsap:immune",
 	"justsap:particles"
 	],
-	"icon": "minecraft:flowering_azalea",
+	"icon": "minecraft:oak_sapling",
 	"order": 3,
 	"impact": 3,
 	"name": "Sapling",
-	"description":"...born from the depths underneath a magical azalea tree, lies this plant-like creature."
+	"description":"...born from the roots of a magical tree, lies this plant-like creature."
 }

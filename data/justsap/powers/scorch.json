@@ -46,7 +46,7 @@
             "enchantment": "minecraft:fire_protection",
             "calculation": "sum",
             "comparison": ">=",
-            "compare_to": 12,
+            "compare_to": 8,
             "inverted": true    
         },
         {
@@ -75,7 +75,7 @@
             "enchantment": "minecraft:fire_protection",
             "calculation": "sum",
             "comparison": ">=",
-            "compare_to": 12,
+            "compare_to": 8,
             "inverted": true    
         }
     ]

@@ -4,24 +4,18 @@
         "comparison": ">=",
         "compare_to": 2
 	},
-
     "type": "origins:active_self",
     "entity_action": {
         "type":"origins:and",
         "actions": [
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace air"
+                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace #minecraft:replaceable"
                 
             },
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:flowers"
-                
-            },
-            {
-                "type":"origins:execute_command",
-                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:azalea_leaves[persistent=true] replace #minecraft:replaceable"
+                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace #justsap:bush-replaceable"
                 
             },
             {
