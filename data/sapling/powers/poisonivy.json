@@ -11,7 +11,7 @@
     "poison-hit": {
         "condition": {
             "type": "origins:power_active",
-            "power": "justsap:poisonivy_toggle1"
+            "power": "sapling:poisonivy_toggle1"
         },
         "type": "origins:action_on_hit",
         "bientity_action": {
@@ -95,7 +95,7 @@
     "indicator": {
         "condition": {
             "type": "origins:power_active",
-            "power": "justsap:poisonivy_toggle1"
+            "power": "sapling:poisonivy_toggle1"
         },
         "type": "origins:overlay",
         "texture": "minecraft:textures/misc/vignette.png",

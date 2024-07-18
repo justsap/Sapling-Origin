@@ -9,7 +9,7 @@
         "interval": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "justsap:regenfield_timer",
+            "resource": "sapling:regenfield_timer",
             "comparison": ">",
             "compare_to": 0
         }
@@ -78,7 +78,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:regenfield_timer",
+                    "resource": "sapling:regenfield_timer",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -112,7 +112,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained":{
             "type": "origins:change_resource",
-            "resource": "justsap:regenfield_timer",
+            "resource": "sapling:regenfield_timer",
             "change": 200,
             "operation": "set"
         }
@@ -124,7 +124,7 @@
             "actions": [
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "justsap:regenfield_timer"
+                    "power": "sapling:regenfield_timer"
                 },
                 {
                     "type": "origins:delay",
@@ -132,7 +132,7 @@
                     "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
                     "action": {
                         "type": "origins:trigger_cooldown",
-                        "power": "justsap:regenfield_cooldown"
+                        "power": "sapling:regenfield_cooldown"
                     }
                 },
                 {
@@ -170,7 +170,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "justsap:regenfield_cooldown",
+                    "resource": "sapling:regenfield_cooldown",
                     "compare_to": 0,
                     "comparison": "=="
                 },

@@ -16,10 +16,14 @@
             {
               "type": "origins:in_block",
               "block_condition": {
-                "type": "origins:light_level",
-                "light_type": "sky",
-                "comparison": ">=",
-                "compare_to": 10
+                "type": "origins:offset",
+                "condition": {
+                  "type": "origins:light_level",
+                  "light_type": "sky",
+                  "comparison": ">=",
+                  "compare_to": 10
+                },
+                "y": 1
               }
             },
             {
@@ -63,37 +67,41 @@
       }
     },
 
-    "shadows":{
+    "shadows": {
       "type": "origins:action_over_time",
-      "entity_action": 
-        {
-            "type": "origins:apply_effect",
-            "effects": [
-              {
-                  "effect": "minecraft:weakness",
-                  "duration": 80,
-                  "amplifier": 1,
-                  "show_particles": false,
-                  "show_icon": true
-              },
-              {
-                  "effect": "minecraft:hunger",
-                  "duration": 80,
-                  "amplifier": 0,
-                  "show_particles": false,
-                  "show_icon": true
-              }
-          ]
-        },
-            "condition": {
-              "type": "origins:in_block",
-              "block_condition": {
-              "type": "origins:light_level",
-              "light_type": "sky",
-              "comparison": "<",
-              "compare_to": 8 }
-            },
-            "interval": 20
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:weakness",
+            "duration": 80,
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": true
+          },
+          {
+            "effect": "minecraft:hunger",
+            "duration": 80,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": true
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:offset",
+          "condition": {
+            "type": "origins:light_level",
+            "light_type": "sky",
+            "comparison": "<",
+            "compare_to": 8
+          },
+          "y": 1
+        }
+      },
+      "interval": 20
     },
 
     "nofood": {

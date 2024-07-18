@@ -1,16 +1,16 @@
 {
 	"powers": [
-		"justsap:poisonivy",
-		"justsap:bush",
-		"justsap:regenfield",
-		"justsap:autotroph",
-		"justsap:scorch",
-		"justsap:leafphasing",
-		"justsap:shieldless",
-		"justsap:remains",
-		"justsap:spawnbiome",
-	"justsap:immune",
-	"justsap:particles"
+		"sapling:poisonivy",
+		"sapling:bush",
+		"sapling:regenfield",
+		"sapling:autotroph",
+		"sapling:scorch",
+		"sapling:leafphasing",
+		"sapling:shieldless",
+		"sapling:remains",
+		"sapling:spawnbiome",
+	"sapling:immune",
+	"sapling:particles"
 	],
 	"icon": "minecraft:oak_sapling",
 	"order": 3,
