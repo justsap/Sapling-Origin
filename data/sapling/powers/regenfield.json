@@ -70,7 +70,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "justsap:regenfield-entities"
+                        "tag": "sapcraft:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -162,7 +162,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "justsap:regenfield-entities"
+                        "tag": "sapcraft:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",

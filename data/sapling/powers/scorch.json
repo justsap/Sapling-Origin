@@ -30,7 +30,7 @@
             "type": "origins:biome",
             "condition": {
                 "type": "origins:in_tag",
-                "tag": "justsap:hots"
+                "tag": "sapcraft:hots"
             }
         },
         {
@@ -72,7 +72,7 @@
             "type": "origins:biome",
             "condition": {
                 "type": "origins:in_tag",
-                "tag": "justsap:hots-nether"
+                "tag": "sapcraft:hots-nether"
             }
         },
         {
