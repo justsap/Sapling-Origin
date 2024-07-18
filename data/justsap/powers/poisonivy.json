@@ -109,5 +109,5 @@
         "visible_in_third_person": true
     },
     "name": "Poison Ivy",
-    "description": "Whenever people touch you or when you enable poison and punch them, they get poisoned."
+    "description": "Whenever people touch you, they get poisoned. The toggle allows you to inflict poison with a punch."
 }

@@ -52,19 +52,11 @@
                         "type": "origins:actor_action",
                         "action": {
                             "type": "origins:apply_effect",
-                            "effects": [
-                                {
-                                    "effect": "minecraft:regeneration",
-                                    "duration": 160,
-                                    "amplifier": 1
-                                },
-                                {
-                                    "effect": "minecraft:resistance",
-                                    "duration": 80,
-                                    "amplifier": 0,
-                                    "show_icon": false
-                                }
-                            ]
+                            "effect": {
+                                "effect": "minecraft:resistance",
+                                "duration": 160,
+                                "amplifier": 0
+                            }
                         }
                     }
                 ]
@@ -77,8 +69,8 @@
                 {
                     "type": "apugli:entity_in_radius",
                     "condition": {
-                        "type": "apoli:entity_type",
-                        "entity_type": "minecraft:player"
+                        "type": "origins:in_tag",
+                        "tag": "justsap:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -169,8 +161,8 @@
                 {
                     "type": "apugli:entity_in_radius",
                     "condition": {
-                        "type": "apoli:entity_type",
-                        "entity_type": "minecraft:player"
+                        "type": "origins:in_tag",
+                        "tag": "justsap:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -197,12 +189,12 @@
         }
     },
     "name": "Share Nutrients",
-    "description": "If in a 4 block radius with another player, you can create a field that heals anyone in it, but it takes away 1 exp level.",
+    "description": "If in proximity with a player or any land animal, you can create a circle that heals those inside it, but it takes away §n1 XP level.",
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/community/silent/badge/shapes/shape_square.png",
-            "text": "Multiplayer ability, use with %s"
+            "text": "Active ability, use with %s\n §o- Must have entity in 4 block radius"
         }
     ]
 }
