@@ -55,7 +55,7 @@
                             "effect": {
                                 "effect": "minecraft:resistance",
                                 "duration": 160,
-                                "amplifier": 0
+                                "amplifier": 1
                             }
                         }
                     }
