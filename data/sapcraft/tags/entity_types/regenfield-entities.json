@@ -24,6 +24,8 @@
         "minecraft:llama",
         "minecraft:panda",
         "minecraft:polar_bear",
+        "minecraft:villager",
+        "minecraft:wandering_trader",
         "minecraft:trader_llama"
     ]
   }

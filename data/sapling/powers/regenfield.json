@@ -37,13 +37,15 @@
                                     "effect": "minecraft:saturation",
                                     "duration": 160,
                                     "amplifier": 0,
-                                    "show_icon": false
+                                    "show_icon": false,
+                                    "show_particles": false
                                 },
                                 {
                                     "effect": "minecraft:resistance",
                                     "duration": 80,
                                     "amplifier": 1,
-                                    "show_icon": false
+                                    "show_icon": false,
+                                    "show_particles": false
                                 }
                             ]
                         }
@@ -52,14 +54,30 @@
                         "type": "origins:actor_action",
                         "action": {
                             "type": "origins:apply_effect",
-                            "effect": {
-                                "effect": "minecraft:resistance",
-                                "duration": 160,
-                                "amplifier": 1
-                            }
+                            "effects": [
+                                {
+                                    "effect": "minecraft:resistance",
+                                    "duration": 160,
+                                    "amplifier": 1
+                                },
+                                {
+                                    "effect": "minecraft:saturation",
+                                    "duration": 160,
+                                    "amplifier": 0,
+                                    "show_icon": false,
+                                    "show_particles": false
+                                }
+                            ]
                         }
                     }
                 ]
+            },
+            "bientity_condition": {
+                "type":"origins:target_condition",
+                "condition": {
+                        "type": "origins:in_tag",
+                        "tag": "sapcraft:regenfield-entities"
+                }
             }
         },
         "interval": 10,
