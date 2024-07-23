@@ -76,7 +76,7 @@
                 "type":"origins:target_condition",
                 "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                 }
             }
         },
@@ -88,7 +88,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -182,7 +182,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
