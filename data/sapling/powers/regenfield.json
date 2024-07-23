@@ -4,7 +4,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "function img:regenfield"
+            "command": "function sapling:healcircle"
         },
         "interval": 5,
         "condition": {
