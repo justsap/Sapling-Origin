@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+      "#minecraft:replaceable",
       "#minecraft:small_flowers",
       "#minecraft:tall_flowers",
       "#apoli:material/plant",

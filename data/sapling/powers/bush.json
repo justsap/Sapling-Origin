@@ -10,12 +10,7 @@
         "actions": [
             {
                 "type":"origins:execute_command",
-                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace #minecraft:replaceable"
-                
-            },
-            {
-                "type":"origins:execute_command",
-                "command": "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace #sapcraft:bush-replaceable"
+                "command": "fill ~1 ~2 ~1 ~-1 ~-1 ~-1 minecraft:flowering_azalea_leaves[persistent=true] replace #sapcraft:bush-replaceable"
                 
             },
             {

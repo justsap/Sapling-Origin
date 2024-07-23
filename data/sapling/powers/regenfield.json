@@ -4,12 +4,12 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "function img:regenfield"
+            "command": "function sapling:healcircle"
         },
         "interval": 5,
         "condition": {
             "type": "origins:resource",
-            "resource": "sapling:regenfield_timer",
+            "resource": "*:*_timer",
             "comparison": ">",
             "compare_to": 0
         }
@@ -76,7 +76,7 @@
                 "type":"origins:target_condition",
                 "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                 }
             }
         },
@@ -88,7 +88,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -96,7 +96,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "sapling:regenfield_timer",
+                    "resource": "*:*_timer",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -126,13 +126,24 @@
             "comment": "//You can edit this 'hud_render' as you please."
         }
     },
-    "reset":{
+    "reset": {
         "type": "origins:action_on_callback",
-        "entity_action_gained":{
-            "type": "origins:change_resource",
-            "resource": "sapling:regenfield_timer",
-            "change": 200,
-            "operation": "set"
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_timer",
+                    "change": 200,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_trigger",
+                    "change": 604,
+                    "operation": "set"
+                }
+            ]
         }
     },
     "trigger": {
@@ -142,16 +153,7 @@
             "actions": [
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "sapling:regenfield_timer"
-                },
-                {
-                    "type": "origins:delay",
-                    "ticks": 201,
-                    "comment": "//Make the 'ticks' value the same as the timer's 'cooldown' value",
-                    "action": {
-                        "type": "origins:trigger_cooldown",
-                        "power": "sapling:regenfield_cooldown"
-                    }
+                    "power": "*:*_timer"
                 },
                 {
                     "type": "origins:add_xp",
@@ -171,8 +173,8 @@
                 }
             ]
         },
-        "cooldown": 200,
-        "comment": "//Make the 'cooldown' value the same as the timer's 'cooldown' value",
+        "cooldown": 604,
+        "comment": "//Make this equal the ticks of the subpowers `timer` and `cooldown` if they were added together. (So if timer is 200, and coolddown is 400, it should equal 600)",
         "condition": {
             "type": "origins:and",
             "conditions": [
@@ -180,7 +182,7 @@
                     "type": "apugli:entity_in_radius",
                     "condition": {
                         "type": "origins:in_tag",
-                        "tag": "sapcraft:regenfield-entities"
+                        "tag": "sapling:regenfield-entities"
                     },
                     "radius": 2.5,
                     "comparison": ">=",
@@ -188,7 +190,7 @@
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "sapling:regenfield_cooldown",
+                    "resource": "*:*_cooldown",
                     "compare_to": 0,
                     "comparison": "=="
                 },
@@ -205,6 +207,20 @@
         "hud_render": {
             "should_render": false
         }
+    },
+    "cooldown_trigger": {
+        "type": "origins:action_over_time",
+        "falling_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_cooldown"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_timer",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "interval": 2
     },
     "name": "Share Nutrients",
     "description": "If in proximity with a player or any land animal, you can create a circle that heals those inside it, but it takes away §n1 XP level.",
