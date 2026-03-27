@@ -23,7 +23,7 @@ Information:
 
 	+ Remains: Upon death, you leave an azalea bush and you also have custom hurt & death sounds.
 
-	+ No Shield
+	+ No Shields
 
 -----------------------------------
 
