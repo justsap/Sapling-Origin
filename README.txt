@@ -1,4 +1,4 @@
-Datapack Created by JustSap! (file directory alias: "sapcraft")
+Datapack Created by JustSap or Sugi Hitori! (file directory alias: "sapcraft")
 
 CONTENT AGREEMENT: https://github.com/justsap/Sapling-Origin/blob/main/LICENSE.md
 
@@ -27,13 +27,13 @@ Information:
 
 -----------------------------------
 
-Official Links (as of July 2024)
+Official Links (as of March 2026)
 Modrinth: https://modrinth.com/datapack/origin-sapling (please use this, it has more details and gives links to dependencies)
 Github: https://github.com/justsap/Sapling-Origin/
 
 Socials:
-https://www.youtube.com/@JustSaps
+https://www.youtube.com/@sugi.hitori
 
-@justsap_ on Twitter & Instagram
+https://bsky.app/profile/sugi.being.cat
 
 DO NOT REMOVE THIS TEXT FILE FROM PACK!
